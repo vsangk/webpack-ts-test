@@ -1,6 +1,6 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-const appConfig = require('./appConfig');
+const appConfig = require('./appConfig.ts');
 
 module.exports = {
   entry: './src/index.ts',
