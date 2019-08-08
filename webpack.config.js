@@ -1,5 +1,6 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const appConfig = require('./appConfig');
 
 module.exports = {
   entry: './src/index.ts',
@@ -23,7 +24,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'index.ejs',
       templateParameters: {
-        config: { value: 'hardcoded' },
+        config: appConfig,
       },
     }),
   ],
