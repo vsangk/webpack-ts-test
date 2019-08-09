@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack",
+    "build": "TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack --config webpack.config.ts",
     "clean": "rm -rf ./dist"
   },
   "keywords": [],
